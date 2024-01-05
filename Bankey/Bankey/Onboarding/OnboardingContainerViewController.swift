@@ -6,15 +6,19 @@
 //
 
 import UIKit
+protocol OnboardingContainerViewControllerDelegate : AnyObject {
+    func didFinishOnboarding()
+}
 
 class OnboardingContainerViewController: UIViewController {
+    
+    weak var delegate : OnboardingContainerViewControllerDelegate?
 
     let pageViewController: UIPageViewController
     var pages = [UIViewController]()
-    var currentVC: UIViewController {
-        didSet {
-        }
-    }
+    var currentVC : UIViewController
+    let closeButton = UIButton(type: .system)
+    let doneButton = UIButton(type: .system)
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -39,6 +43,16 @@ class OnboardingContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
+        style()
+        layout()
+        
+        
+       
+        
+        
+    }
+    private func setup() {
         view.backgroundColor = .purple
         
         addChild(pageViewController)
@@ -57,7 +71,46 @@ class OnboardingContainerViewController: UIViewController {
         
         pageViewController.setViewControllers([pages.first!], direction: .forward, animated: false, completion: nil)
         currentVC = pages.first!
+        
     }
+    private func style() {
+        closeButton.translatesAutoresizingMaskIntoConstraints = false
+        closeButton.setTitle("Close", for: [.normal])
+        closeButton.addTarget(self, action: #selector(closeTapped), for: .primaryActionTriggered)
+        closeButton.isHidden = false
+        
+        view.addSubview(closeButton)
+        
+        doneButton.translatesAutoresizingMaskIntoConstraints = false
+        doneButton.setTitle("Done", for: [.normal])
+        doneButton.addTarget(self, action: #selector(doneTapped), for: .primaryActionTriggered)
+//        print(pages.firstIndex(of: currentVC) ?? 0)
+        
+        if pages.firstIndex(of: currentVC) == 2{
+            doneButton.isHidden = false
+        } else {
+            doneButton.isHidden = true
+        }
+        view.addSubview(doneButton)
+        
+        
+    }
+    private func layout() {
+        // CLOSE BUTTON
+        NSLayoutConstraint.activate([
+            closeButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            closeButton.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)
+        ])
+        
+        // DONE BUTTON
+        NSLayoutConstraint.activate([
+            view.trailingAnchor.constraint(equalToSystemSpacingAfter: doneButton.trailingAnchor, multiplier: 2),
+            view.bottomAnchor.constraint(equalToSystemSpacingBelow: doneButton.bottomAnchor, multiplier: 2)
+        ])
+
+    }
+
+        
 }
 
 // MARK: - UIPageViewControllerDataSource
@@ -88,28 +141,25 @@ extension OnboardingContainerViewController: UIPageViewControllerDataSource {
     }
 
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        
         return pages.firstIndex(of: self.currentVC) ?? 0
     }
 }
 
-// MARK: - ViewControllers
-class ViewController1: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemRed
+//MARK: - ACTIONS
+extension OnboardingContainerViewController {
+    @objc func closeTapped() {
+        // Todo
+        delegate?.didFinishOnboarding()
+        
     }
+    @objc func doneTapped() {
+        //DONE BUTTON
+        
+        
+    }
+
 }
 
-class ViewController2: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemGreen
-    }
-}
 
-class ViewController3: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBlue
-    }
-}
+
