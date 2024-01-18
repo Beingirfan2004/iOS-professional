@@ -23,9 +23,12 @@ extension AccountSummaryViewController {
         setupTableView()
         setupTableHeaderView()
         fetchData()
+//        fetchCoinMarketCapData()
+
     }
     
     private func setupTableView() {
+        tableView.backgroundColor = appColor
         tableView.delegate = self
         tableView.dataSource = self
         
