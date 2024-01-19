@@ -30,8 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = mainViewController
         vc.setStatusBar()
         
+        registerForNotifications()
+        
         displayLogin()
         return true
+    }
+    
+    private func registerForNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didLogout), name: .logout, object: nil)
     }
     
     private func displayLogin() {
@@ -97,7 +103,7 @@ extension AppDelegate : OnboardingContainerViewControllerDelegate {
 }
 
 extension AppDelegate : LogoutDelegate {
-    func didLogout() {
+    @objc func didLogout() {
         rootViewController(loginViewController)
     }
 }
