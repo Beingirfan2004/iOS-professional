@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		36320D0E2B5A1BC4004AFDDE /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */; };
 		36320D102B5A275E004AFDDE /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */; };
+		36320D132B5A91EE004AFDDE /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */; };
 		36554D062B479F9D008F3532 /* DummyviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D052B479F9D008F3532 /* DummyviewController.swift */; };
 		36554D092B47B36F008F3532 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D082B47B36F008F3532 /* LocalState.swift */; };
 		36554D0B2B48D565008F3532 /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D0A2B48D565008F3532 /* UIViewController+Utility.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
+		36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
 		36554D052B479F9D008F3532 /* DummyviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyviewController.swift; sourceTree = "<group>"; };
 		36554D082B47B36F008F3532 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		36554D0A2B48D565008F3532 /* UIViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36320D112B5A91C8004AFDDE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		36554D072B47B355008F3532 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +169,7 @@
 				36F348F62B44E02E000A4594 /* Login */,
 				36F348FE2B463749000A4594 /* Onboarding */,
 				36554D0E2B48FB67008F3532 /* AccountSummary */,
+				36320D112B5A91C8004AFDDE /* Components */,
 				36554D072B47B355008F3532 /* Utility */,
 				36F348F92B44E735000A4594 /* Files */,
 				36554D0C2B48DA09008F3532 /* MainViewController.swift */,
@@ -307,6 +318,7 @@
 			files = (
 				36F348F82B44E0A2000A4594 /* LoginView.swift in Sources */,
 				36554D092B47B36F008F3532 /* LocalState.swift in Sources */,
+				36320D132B5A91EE004AFDDE /* ShakeyBellView.swift in Sources */,
 				36EF56C42B4430DB0024C659 /* LoginViewController.swift in Sources */,
 				36554D162B4B7B68008F3532 /* AccountSummaryHeaderView.swift in Sources */,
 				36F349022B464927000A4594 /* OnboardingViewController.swift in Sources */,
