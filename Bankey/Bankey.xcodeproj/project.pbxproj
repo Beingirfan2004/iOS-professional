@@ -10,6 +10,8 @@
 		36320D0E2B5A1BC4004AFDDE /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */; };
 		36320D102B5A275E004AFDDE /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */; };
 		36320D132B5A91EE004AFDDE /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */; };
+		36320D272B5E4A97004AFDDE /* Date+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D262B5E4A97004AFDDE /* Date+Utility.swift */; };
+		36320D292B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D282B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift */; };
 		36554D062B479F9D008F3532 /* DummyviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D052B479F9D008F3532 /* DummyviewController.swift */; };
 		36554D092B47B36F008F3532 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D082B47B36F008F3532 /* LocalState.swift */; };
 		36554D0B2B48D565008F3532 /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D0A2B48D565008F3532 /* UIViewController+Utility.swift */; };
@@ -45,6 +47,8 @@
 		36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		36320D262B5E4A97004AFDDE /* Date+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utility.swift"; sourceTree = "<group>"; };
+		36320D282B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryVC+Networking.swift"; sourceTree = "<group>"; };
 		36554D052B479F9D008F3532 /* DummyviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyviewController.swift; sourceTree = "<group>"; };
 		36554D082B47B36F008F3532 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		36554D0A2B48D565008F3532 /* UIViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 				36554D212B4ECE1C008F3532 /* ApiCall.swift */,
 				36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */,
 				36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */,
+				36320D262B5E4A97004AFDDE /* Date+Utility.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				36554D0F2B48FB90008F3532 /* AccountSummaryViewController.swift */,
+				36320D282B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift */,
 				36554D192B4BECCC008F3532 /* Header */,
 				36554D1A2B4BED0E008F3532 /* Cells */,
 			);
@@ -321,11 +327,13 @@
 				36320D132B5A91EE004AFDDE /* ShakeyBellView.swift in Sources */,
 				36EF56C42B4430DB0024C659 /* LoginViewController.swift in Sources */,
 				36554D162B4B7B68008F3532 /* AccountSummaryHeaderView.swift in Sources */,
+				36320D292B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift in Sources */,
 				36F349022B464927000A4594 /* OnboardingViewController.swift in Sources */,
 				36554D202B4E267D008F3532 /* CurrencyFormatter.swift in Sources */,
 				36554D062B479F9D008F3532 /* DummyviewController.swift in Sources */,
 				36554D1C2B4BED9D008F3532 /* AccountSummaryCell.swift in Sources */,
 				36554D0B2B48D565008F3532 /* UIViewController+Utility.swift in Sources */,
+				36320D272B5E4A97004AFDDE /* Date+Utility.swift in Sources */,
 				36554D0D2B48DA09008F3532 /* MainViewController.swift in Sources */,
 				36554D222B4ECE1C008F3532 /* ApiCall.swift in Sources */,
 				36320D102B5A275E004AFDDE /* UITextField+SecureToggle.swift in Sources */,
