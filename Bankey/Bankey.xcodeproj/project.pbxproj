@@ -14,6 +14,8 @@
 		36320D292B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D282B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift */; };
 		36320DDF2B726921004AFDDE /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320DDE2B726921004AFDDE /* ProfileTests.swift */; };
 		36320DE12B726C40004AFDDE /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320DE02B726C40004AFDDE /* AccountTests.swift */; };
+		36320DE32B7346F1004AFDDE /* SkeletonLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320DE22B7346F1004AFDDE /* SkeletonLoadable.swift */; };
+		36320DE52B7347BA004AFDDE /* SkeletonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320DE42B7347BA004AFDDE /* SkeletonCell.swift */; };
 		36554D062B479F9D008F3532 /* DummyviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D052B479F9D008F3532 /* DummyviewController.swift */; };
 		36554D092B47B36F008F3532 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D082B47B36F008F3532 /* LocalState.swift */; };
 		36554D0B2B48D565008F3532 /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36554D0A2B48D565008F3532 /* UIViewController+Utility.swift */; };
@@ -53,6 +55,8 @@
 		36320D282B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryVC+Networking.swift"; sourceTree = "<group>"; };
 		36320DDE2B726921004AFDDE /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
 		36320DE02B726C40004AFDDE /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
+		36320DE22B7346F1004AFDDE /* SkeletonLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonLoadable.swift; sourceTree = "<group>"; };
+		36320DE42B7347BA004AFDDE /* SkeletonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonCell.swift; sourceTree = "<group>"; };
 		36554D052B479F9D008F3532 /* DummyviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyviewController.swift; sourceTree = "<group>"; };
 		36554D082B47B36F008F3532 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		36554D0A2B48D565008F3532 /* UIViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				36554D1B2B4BED9D008F3532 /* AccountSummaryCell.swift */,
+				36320DE22B7346F1004AFDDE /* SkeletonLoadable.swift */,
+				36320DE42B7347BA004AFDDE /* SkeletonCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -360,7 +366,9 @@
 				36320D272B5E4A97004AFDDE /* Date+Utility.swift in Sources */,
 				36554D0D2B48DA09008F3532 /* MainViewController.swift in Sources */,
 				36554D222B4ECE1C008F3532 /* ApiCall.swift in Sources */,
+				36320DE32B7346F1004AFDDE /* SkeletonLoadable.swift in Sources */,
 				36320D102B5A275E004AFDDE /* UITextField+SecureToggle.swift in Sources */,
+				36320DE52B7347BA004AFDDE /* SkeletonCell.swift in Sources */,
 				36554D102B48FB90008F3532 /* AccountSummaryViewController.swift in Sources */,
 				36320D0E2B5A1BC4004AFDDE /* NSNotificationName.swift in Sources */,
 				36554D1E2B4E25B6008F3532 /* DecimalUtility.swift in Sources */,
