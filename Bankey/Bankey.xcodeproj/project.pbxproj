@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360E5B282B74AA460010675A /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E5B272B74AA460010675A /* ProfileManager.swift */; };
+		360E5B2A2B74B1AB0010675A /* AccountSummaryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360E5B292B74B1AB0010675A /* AccountSummaryViewControllerTests.swift */; };
 		36320D0E2B5A1BC4004AFDDE /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */; };
 		36320D102B5A275E004AFDDE /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */; };
 		36320D132B5A91EE004AFDDE /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		360E5B272B74AA460010675A /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		360E5B292B74B1AB0010675A /* AccountSummaryViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewControllerTests.swift; sourceTree = "<group>"; };
 		36320D0D2B5A1BC4004AFDDE /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		36320D0F2B5A275E004AFDDE /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		36320D122B5A91EE004AFDDE /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
@@ -99,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360E5B262B74AA1C0010675A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				360E5B272B74AA460010675A /* ProfileManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		36320D112B5A91C8004AFDDE /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +132,7 @@
 			children = (
 				36320DDE2B726921004AFDDE /* ProfileTests.swift */,
 				36320DE02B726C40004AFDDE /* AccountTests.swift */,
+				360E5B292B74B1AB0010675A /* AccountSummaryViewControllerTests.swift */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -146,6 +159,7 @@
 				36320D282B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift */,
 				36554D192B4BECCC008F3532 /* Header */,
 				36554D1A2B4BED0E008F3532 /* Cells */,
+				360E5B262B74AA1C0010675A /* Networking */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -345,6 +359,7 @@
 				36554D312B58AA5A008F3532 /* CurrencyFormatterTests.swift in Sources */,
 				36320DE12B726C40004AFDDE /* AccountTests.swift in Sources */,
 				36320DDF2B726921004AFDDE /* ProfileTests.swift in Sources */,
+				360E5B2A2B74B1AB0010675A /* AccountSummaryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +373,7 @@
 				36EF56C42B4430DB0024C659 /* LoginViewController.swift in Sources */,
 				36554D162B4B7B68008F3532 /* AccountSummaryHeaderView.swift in Sources */,
 				36320D292B5E4D01004AFDDE /* AccountSummaryVC+Networking.swift in Sources */,
+				360E5B282B74AA460010675A /* ProfileManager.swift in Sources */,
 				36F349022B464927000A4594 /* OnboardingViewController.swift in Sources */,
 				36554D202B4E267D008F3532 /* CurrencyFormatter.swift in Sources */,
 				36554D062B479F9D008F3532 /* DummyviewController.swift in Sources */,
